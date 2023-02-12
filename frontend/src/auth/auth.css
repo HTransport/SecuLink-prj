@@ -1,0 +1,105 @@
+main.auth {
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.main-div,
+.main-div * {
+	transition: all 250ms;
+}
+
+.main-div {
+	padding: 40px;
+	width: 100%;
+	max-width: 500px;
+	background-color: #13063f;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.main-div h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main-div h2 {
+	font-size: 15px;
+	color: #fff;
+}
+
+.main-div .container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.main-div .custom-input {
+	width: 100%;
+	max-width: unset;
+}
+
+.main-div path {
+	fill: #ffffff;
+}
+
+.main-div button {
+	margin-top: 50px;
+	background-color: #210b6a;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.main-div button.error-button {
+	margin-top: 0;
+}
+
+.main-div button:is(.disabled, :hover) {
+	background-color: #1c0b52;
+	color: #ccc;
+}
+
+.main-div button.disabled {
+	cursor: progress;
+}
+
+.main-div .error {
+	font-size: 15px;
+	color: rgb(223, 65, 65);
+}
+
+.main-div .info {
+	font-size: 15px;
+	color: #fff;
+	align-self: flex-end;
+}
+
+.main-div .info b {
+	cursor: pointer;
+}
+
+.main-div #pin-input {
+	height: 71px;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.main-div #pin-input:not(#pin-input.active) {
+	height: 0;
+	margin-bottom: -30px;
+}
+
+@media screen and (max-width: 400px) {
+	.auth {
+		padding: 0;
+	}
+	.main-div {
+		padding: 20px;
+	}
+}

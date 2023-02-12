@@ -1,0 +1,62 @@
+:root {
+	font-size: 25px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	font-family: "Open Sans";
+	font-style: normal;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+html,
+body,
+#root,
+.main-dashboard-container {
+	min-width: 330px !important;
+	background-color: #13063f;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+	transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+	background-color: transparent !important;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #00dbfd #13063f;
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #13063f;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #00dbfd;
+	border-radius: 5px;
+}
